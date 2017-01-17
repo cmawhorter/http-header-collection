@@ -1,0 +1,32 @@
+{
+  "name": "http-header-collection",
+  "description": "Standard object and utilities for dealing with http headers.",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm run build && npm test",
+    "build": "rollup -c rollup.config.js",
+    "test": "mocha -r ./test/lib/helper test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmawhorter/http-header-collection"
+  },
+  "author": {
+    "name": "Cory Mawhorter",
+    "email": "cory.mawhorter@gmail.com"
+  },
+  "main": "dist/http-header-collection.umd.js",
+  "module": "dist/http-header-collection.es2015.js",
+  "jsnext:main": "dist/http-header-collection.es2015.js",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0",
+    "rollup": "^0.41.1",
+    "rollup-plugin-babel": "^2.7.1",
+    "source-map-support": "^0.4.9"
+  }
+}

@@ -10,7 +10,7 @@ describe('#remove', function() {
 
   it('should not throw if header does not exist', function() {
     var collection = createMockCollection();
-    assert.doesNotThrow(() => {
+    assert.doesNotThrow(function() {
       HttpHeaders.remove(collection, 'no-exist');
     });
   });
